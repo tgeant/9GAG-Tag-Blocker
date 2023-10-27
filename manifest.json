@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "9GAG Tag Blocker",
-  "version": "1.1",
+  "version": "1.1.1",
   "description": "A plugin to block 9GAG articles by tag.",
   "icons": {
     "48": "icons/icon-48.png",
@@ -11,6 +11,14 @@
   "host_permissions": [
     "https://9gag.com/*"
   ],
+  "action": {
+    "default_icon": {
+      "48": "icons/icon-48.png",
+      "96": "icons/icon-96.png",
+      "128": "icons/icon-128.png"
+    },
+    "default_popup": "popup.html"
+  },  
   "browser_specific_settings": {
     "gecko": {
       "id": "{70550fa5-8abb-4dbb-a6cd-6c68bf4a865f}"
@@ -19,7 +27,7 @@
   "content_scripts": [
     {
       "matches": [
-        "*://9gag.com/*"
+        "https://9gag.com/*"
       ],
       "js": [
         "content.js"

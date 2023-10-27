@@ -8,6 +8,19 @@ This Firefox plugin is designed specifically for 9GAG and allows users to block 
 - **Dynamic Filtering**: Uses MutationObserver to detect changes in the 9GAG DOM and filter articles accordingly.
 - **Manage Blocked Tags on 9GAG**: A section is provided that displays all blocked tags with an option to unblock them.
 
+## Installation and Activation
+
+1. **Download the Plugin from Firefox Add-ons**:
+   - Visit the [official plugin page](https://addons.mozilla.org/fr/firefox/addon/9gag-tag-blocker/) on Firefox Add-ons.
+   - Click on the "Add to Firefox" button to install the plugin.
+
+2. **Granting Permissions via Popup**:
+   - Once the plugin is installed, click on its icon in the browser's toolbar.
+   - A popup will appear, asking you to grant permissions for the plugin to modify 9GAG content.
+   - Click the "Grant" button within the popup to provide the necessary permissions.
+   - Once permissions are granted, the popup message will update to indicate that the permissions have already been granted.
+
+
 ## How to Use
 
 1. **Block a Tag on 9GAG**:
@@ -28,5 +41,6 @@ This Firefox plugin is designed specifically for 9GAG and allows users to block 
 
 ## Troubleshooting
 
+- **Plugin doesn't seem to be working**: Make sure the necessary permissions have been granted. If unsure, click the plugin icon to access the popup and verify permissions.
 - **Blocked tags are not saved**: Ensure that your browser allows websites to store data in local storage.
 - **Tags are not being blocked on 9GAG**: Ensure that the 9GAG website's structure hasn't changed, as the plugin relies on specific HTML elements and classes to function.
