@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "9GAG Tag Blocker",
+    "version": "1.0",
+    "description": "A plugin to filter 9GAG articles by tag.",
+    "icons": {
+        "48": "icons/icon-48.png",
+        "96": "icons/icon-96.png",
+        "128": "icons/icon-128.png"
+    },
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["*://9gag.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
